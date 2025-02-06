@@ -13,6 +13,7 @@
   "files": [
     "dist/**/*"
   ],
+  "bin": "bin.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chronoDave/package-size.git"

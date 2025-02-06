@@ -11,7 +11,11 @@ export default [{
       target: 'esnext'
     })
   ],
-  external: [],
+  external: [
+    'fs/promises',
+    'path',
+    'zlib'
+  ],
   output: [{
     file: output('js'),
     exports: 'auto',
