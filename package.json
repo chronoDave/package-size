@@ -1,0 +1,43 @@
+{
+  "name": "@chronocide/package-size",
+  "version": "0.0.1",
+  "type": "module",
+  "types": "dist/package-size.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/package-size.js",
+      "require": "./dist/package-size.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chronoDave/package-size.git"
+  },
+  "author": "Chronocide",
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">=20.16.0"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "build": "rollup -c",
+    "test": "node scripts/tape.js && tape build/**/*.spec.js",
+    "preversion": "npm run lint && npm run test && npm run build",
+    "postversion": "npm publish"
+  },
+  "devDependencies": {
+    "@chronocide/eslint-config": "github:chronoDave/eslint-config",
+    "@types/tape": "^5.6.4",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.1",
+    "rollup": "^4.22.4",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "tape": "^5.8.1",
+    "typescript": "^5.5.4"
+  }
+}
