@@ -5,7 +5,7 @@
     <img alt="License AGPLv3" src="https://img.shields.io/badge/license-AGPLv3-blue.svg" />
   </a>
   <a href="https://www.npmjs.com/package/@chronocide/package-size">
-    <img alt="NPM" src="https://img.shields.io/npm/v/@chronocide/spider?label=npm">
+    <img alt="NPM" src="https://img.shields.io/npm/v/@chronocide/package-size?label=npm">
   </a>
 	<img alt="1.56KB" src="https://img.shields.io/badge/gzip-1.56KB-g">
 </div>
