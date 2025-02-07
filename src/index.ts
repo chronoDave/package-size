@@ -1,6 +1,9 @@
-import tar from './lib/tar';
 import gzip from './lib/gzip';
+import tar from './lib/tar';
 
-export default async (dir: string) => tar(dir)
+export { tar, gzip };
+
+/** Return size of `.tgz` in bytes */
+export default async (...files: string[]): Promise<number> => tar(...files)
   .then(gzip)
   .then(buffer => buffer.byteLength);
