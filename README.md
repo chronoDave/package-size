@@ -44,6 +44,6 @@ console.log(zip.byteLength) // 1875
 
 See [`/scripts/size.js`](/scripts/size.js) for an example that automatically creates a size badge.
 
-### Why?
+## Why?
 
 I couldn't find an package / online tool that was both small and gave me the size of **only**  code. npm bundles `package.json`, `README`, `LICENSE`, `main` and `bin`, which are irrelevant when trying to determine the size of packages. `@chronocide/package-size` tries to solve that by only calculating the size of files defined in [`files`](https://docs.npmjs.com/cli/v10/configuring-npm/package-json?v=true#files).
